@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Auto generate password</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+
+<div id="maindiv" class="row">
+	<div id="container-div" class="col-md-6 col-md-offset-3 col-sm-12">
+		<select class="form-control input" id="type-select" autofocus="true">
+			<option value="0"> Select a password type </option>
+			<option value="7">Random</option>
+			<option value="1">Numbers only</option>
+			<option value="2">Characters only</option>
+			<optgroup><option value="0">Alphabets</option></optgroup>
+			<option value="3">Upper and Lower case</option>
+			<option value="4">Upper case only</option>
+			<option value="5">Lower case only</option>
+			<optgroup><option value="0">Mixed</option></optgroup>
+			<option value="6">Numbers and Alphabets</option>
+		</select>
+		<input type="number" name="pass-length" value="5" max="8" min="4" id="pass-length" class="form-control input">
+		<input type="text" name="pass" class="form-control input" id="pass" value="" placeholder="Copy password here">
+		<span class="help-block">Click generate to generate a random password</span>
+		<button type="button" id="generate-pass" class="btn btn-primary">Generate</button>
+	</div>
+</div>
+
+</body>
+
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript" src="js/script.js"></script>
+</html>
